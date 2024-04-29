@@ -1,4 +1,4 @@
-Condiciones
+Condiciones->
 El nombre de usuario debe cumplir con los siguientes parámetros:
 a. No contener signos
 b. No debe estar duplicado
