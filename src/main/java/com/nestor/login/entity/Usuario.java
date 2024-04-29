@@ -1,6 +1,7 @@
 package com.nestor.login.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,6 +27,8 @@ public class Usuario {
     private Long ususarioId;
     private String nombreUsuario;
     private String contrasenia;
+
+    @Email(message = "Por favor ingrese un correo válido")
     private String correo;
     private char sesionActiva;
     private String estado;

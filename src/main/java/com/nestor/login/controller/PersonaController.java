@@ -22,6 +22,11 @@ public class PersonaController {
         return ResponseEntity.status(HttpStatus.OK).body(personaService.listarPersonas());
     }
 
+    @GetMapping("/buscarPorId/{id}")
+    public ResponseEntity<Persona> buscarPersonaPorId(@PathVariable Long id){
+        return ResponseEntity.status(HttpStatus.OK).body(personaService.buscarPersonaPorId(id));
+    }
+
     @PostMapping("/insertar")
     public ResponseEntity<Persona>ingrsarPersona(@RequestBody Persona persona){
         return ResponseEntity.status(HttpStatus.CREATED).body(personaService.ingresarPersona(persona));

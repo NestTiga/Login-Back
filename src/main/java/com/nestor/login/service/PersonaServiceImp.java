@@ -21,4 +21,9 @@ public class PersonaServiceImp implements PersonaService{
     public Persona ingresarPersona(Persona persona) {
         return personaRepository.save(persona);
     }
+
+    @Override
+    public Persona buscarPersonaPorId(Long id) {
+        return personaRepository.findById(id).get();
+    }
 }

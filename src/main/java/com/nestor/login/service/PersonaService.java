@@ -9,4 +9,6 @@ public interface PersonaService {
     List<Persona> listarPersonas();
 
     Persona ingresarPersona(Persona persona);
+
+    Persona buscarPersonaPorId(Long id);
 }
